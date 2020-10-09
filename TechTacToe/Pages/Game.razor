@@ -1,0 +1,261 @@
+@page "/game"
+@inject IJSRuntime JSRuntime;
+@inject HttpClient Http
+
+
+<PageTitle Title="Tech-Tac-Toe"></PageTitle>
+
+@if(isPlayerX){
+    PlayerIndicator = "Player X";
+}
+else{
+    PlayerIndicator = "Player O";
+}
+<p id="player-text"><b>Active: </b><i>@PlayerIndicator</i></p>
+
+<Instructions></Instructions>
+<Board >  
+    
+    <tr>     
+        <td @ref=currentCell[0]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[0]))" >
+                    
+        </td>
+        <td @ref=currentCell[1]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[1] ))" >
+                  
+        </td>
+        <td @ref=currentCell[2]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[2] ))" >
+                    
+        </td>
+        <td @ref=currentCell[3]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[3] ))" >
+                    
+        </td>
+    </tr>
+    <tr>     
+        <td @ref=currentCell[4]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[4] ))" >
+                    
+        </td>
+        <td @ref=currentCell[5]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[5] ))" >
+                    
+        </td>
+        <td @ref=currentCell[6]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[6] ))" >
+                    
+        </td>
+        <td @ref=currentCell[7]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[7] ))" >
+                    
+        </td>
+    </tr>
+    <tr>     
+        <td @ref=currentCell[8]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[8] ))" >
+                    
+        </td>
+        <td @ref=currentCell[9]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[9] ))" >
+                    
+        </td>
+        <td @ref=currentCell[10]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[10] ))" >
+                    
+        </td>
+        <td @ref=currentCell[11]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[11] ))" >
+                    
+        </td>
+    </tr>
+    <tr>     
+        <td @ref=currentCell[12]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[12] ))" >
+                    
+        </td>
+        <td @ref=currentCell[13]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[13] ))" >
+                    
+        </td>
+        <td @ref=currentCell[14]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[14] ))" >
+                   
+        </td>
+        <td @ref=currentCell[15]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[15] ))" >
+                   
+        </td>
+    </tr>
+          
+</Board>
+
+
+ @if(showQuestion){
+   
+    <EditForm Model="@answerModel" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+    
+        <div id="questionPrompt">
+            @if (questions == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <Question @bind-CurrentQuestion="currentQuestion"></Question>
+            }
+        <InputText id="name" @bind-Value="answerModel.Answer" />
+        <button type="submit">Submit</button>
+        </div>
+      
+    </EditForm>
+  
+ }
+
+ @if(showMessage){
+     
+     if(isGoodAnswer){
+        <GoodMessage>@message</GoodMessage>
+        
+
+     }
+     else{
+         <BadMessage>@message</BadMessage>
+     }
+
+  
+  
+ }
+
+@code
+{
+    enum Mark { X, O };
+
+    public ElementReference Element { get; set; }
+
+    private ElementReference[] currentCell = new ElementReference[16];
+
+    private bool isPlayerX = true;
+
+    private string message;
+
+    private string playerIndicator;
+
+
+    public string PlayerIndicator { get => playerIndicator; set => playerIndicator = value; }
+
+    private QuestionCollection[] questions;
+
+    private string currentQuestion;
+
+    private QuestionCollection currentQA;
+
+    private string[] currentAnswers;
+
+    Random rand = new Random();
+
+    private bool showQuestion = false;
+
+    private bool showMessage = false;
+
+    private bool isGoodAnswer = false;
+
+
+    public AnswerModel answerModel = new AnswerModel();
+
+    public class QuestionCollection
+    {
+        public string Question { get; set; }
+        public string[] Answers { get; set; }
+    }
+
+    public class AnswerModel
+    {
+        [Required]
+        [StringLength(20, ErrorMessage = "Name is too long.")]
+        public string Answer { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        questions = await Http.GetFromJsonAsync<QuestionCollection[]>("sample-data/questions.json");
+
+    }
+
+    private void UpdateCurrentAnswer()
+    {
+
+        currentAnswers = currentQA.Answers;
+
+    }
+
+    private void UpdateCurrentQuestion(ElementReference el)
+    {
+
+        currentQA = questions[rand.Next(questions.Length)];
+        showQuestion = true;
+        currentQuestion = currentQA.Question;
+        UpdateCurrentAnswer();
+        Element = el;
+
+    }
+
+    private async Task WinSquare(ElementReference el)
+    {
+        if (isPlayerX)
+        {
+            await JSRuntime.InvokeVoidAsync("setElementText", el, "X");
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("setElementText", el, "O");
+        }
+
+
+
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (currentAnswers.Contains(answerModel.Answer))
+        {
+            answerModel.Answer = String.Empty;
+            message = "Good Answer!";
+            isGoodAnswer = true;
+            showQuestion = false;
+            showMessage = true;
+            await WinSquare(Element);
+
+
+        }
+        else
+        {
+            answerModel.Answer = String.Empty;
+            message = "Wrong Answer!";
+            isGoodAnswer = false;
+            showQuestion = false;
+            showMessage = true;
+
+        }
+
+
+
+        await ToggleMessage();
+        TogglePlayer();
+
+    }
+
+    private async Task ToggleMessage()
+    {
+
+        await Task.Delay(3000);
+
+        showMessage = !showMessage;
+        message = String.Empty;
+    }
+
+    private void TogglePlayer()
+    {
+        isPlayerX = !isPlayerX;
+    }
+
+    private void CheckRows()
+    {
+
+    }
+
+    private void CheckDiagonals()
+    {
+
+    }
+}
+
+

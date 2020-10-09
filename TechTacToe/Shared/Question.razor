@@ -1,0 +1,18 @@
+
+
+
+
+<p>@CurrentQuestion</p>
+
+ 
+
+@code
+{
+    [Parameter]
+    public string CurrentQuestion { get; set; }
+
+    [Parameter]
+    public EventCallback<string> CurrentQuestionChanged { get; set; }
+
+}
+ 
