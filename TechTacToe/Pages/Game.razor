@@ -179,7 +179,7 @@ else{
 
     private void UpdateCurrentQuestion(ElementReference el)
     {
-
+        System.Console.WriteLine(questions.Length);
         currentQA = questions[rand.Next(questions.Length)];
         showQuestion = true;
         currentQuestion = currentQA.Question;

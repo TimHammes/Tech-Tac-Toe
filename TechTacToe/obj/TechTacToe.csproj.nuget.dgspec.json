@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/timothyhammes/Projects/TechTacToe/TechTacToe.csproj": {}
+    "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/TechTacToe.csproj": {}
   },
   "projects": {
-    "/Users/timothyhammes/Projects/TechTacToe/TechTacToe.csproj": {
+    "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/TechTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/timothyhammes/Projects/TechTacToe/TechTacToe.csproj",
+        "projectUniqueName": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/TechTacToe.csproj",
         "projectName": "TechTacToe",
-        "projectPath": "/Users/timothyhammes/Projects/TechTacToe/TechTacToe.csproj",
+        "projectPath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/TechTacToe.csproj",
         "packagesPath": "/Users/timothyhammes/.nuget/packages/",
-        "outputPath": "/Users/timothyhammes/Projects/TechTacToe/obj/",
+        "outputPath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/timothyhammes/.nuget/NuGet/NuGet.Config"

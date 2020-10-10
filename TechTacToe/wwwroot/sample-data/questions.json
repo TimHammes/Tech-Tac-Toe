@@ -18,5 +18,330 @@
   {
     "question": "What type of power connector do PATA drives use?",
     "answers": ["Molex"]
+  },
+  {
+    "question": "What is an ATA?",
+    "answers": ["Advanced Technology Attachment"]
+  },
+  {
+    "question": "What is S.M.A.R.T?" ,
+    "answers": ["Self Monitoring and Reporting Technology"]
+  },
+  {
+    "question": "What is max throughput for SATA 1.0?" ,
+    "answers": ["1.5 Gbps, 1.5 gigabits"]
+  },
+  {
+    "question": "What is max throughput for SATA 2.0" ,
+    "answers": ["3 Gbps, 3 gigabits"]
+  },
+  {
+    "question": "What is max throughput for SATA 3.0" ,
+    "answers": ["6 Gbps, 6 gigabits"]
+  },
+  {
+    "question": "What is max throughput for SATA 3.2",
+    "answers": ["16 Gbps, 16 gigabits"]
+  },
+  {
+    "question": "What is AHCI?",
+    "answers": ["Advanced Host Controller Interface" ]
+  },
+  {
+    "question": "You should enable AHCI after you install OS?",
+    "answers": ["false" ]
+  },
+  {
+    "question": "What features does AHCI unlock?",
+    "answers": ["hot swapping, native command queing, NCQ" ]
+  },
+  {
+    "question": "What is NCQ?",
+    "answers": ["Native Command Queing"]
+  },
+  {
+    "question": "NCQ is a disk optimization feature for what type for drive?",
+    "answers": ["SATA"]
+  },
+  {
+    "question": "What is RAID?" ,
+    "answers": ["Redundant Array of Independent Disks"]
+  },
+  {
+    "question": "What is RAID 1 used for?",
+    "answers": ["disk mirroring"]
+  },
+  {
+    "question": "What is RAID 0 used for?"  ,
+    "answers": ["disk striping"]
+  },
+  {
+    "question": "What level of RAID is disk striping with parity?",
+    "answers": ["5"]
+  },
+  {
+    "question": "How many drives do you need to implement RAID 5?",
+    "answers": ["3" ]
+  },
+  {
+    "question": "What is JBOD?" ,
+    "answers": ["Just a bunch of disks"]
+  },
+  {
+    "question": "How many functional failures does RAID 5 have?",
+    "answers": ["1"]
+  },
+  {
+    "question": "How many functional failures does RAID 6 have?",
+    "answers": ["2" ]
+  },
+  {
+    "question": "How many drives do you need to implement RAID 6?",
+    "answers": ["5"]
+  },
+  {
+    "question": "What RAID level uses extra parity?",
+    "answers": ["6"]
+  },
+  {
+    "question": "What is striped mirrors?" ,
+    "answers": ["RAID 10"]
+  },
+  {
+    "question": "How many functional failures does mirror of stripes have?" ,
+    "answers": ["2" ]
+  },
+  {
+    "question": "How many drives do you need to implement RAID 10?",
+    "answers": ["4"]
+  },
+  {
+    "question": "What is the RAID implementation available in Windows 8/8.1/10 called?" ,
+    "answers": ["storage spaces"]
+  },
+  {
+    "question": "What handles all the work in hardware RAID implementation?",
+    "answers": ["Intelligent controller, controller"]
+  },
+  {
+    "question": "Hardware RAID controllers have their own ____ so they can handle all RAID work?",
+    "answers": ["processor, memory" ]
+  },
+  {
+    "question": "What is a common concern when using RAID?",
+    "answers": ["heat"]
+  },
+  {
+    "question": "What are some common case fan sizes?",
+    "answers": ["60,80,120"]
+  },
+  {
+    "question": "What is used to indicate pin 1 on hard drive cable?",
+    "answers": ["colored stripe, stripe" ]
+  },
+  {
+    "question": "What do you use to install a 2.5 inch SSD in desktop 3.5 inch bay?",
+    "answers": ["form factor adaptor, adaptor"]
+  },
+  {
+    "question": "What SSD form factor is typically used in laptops?",
+    "answers": ["2.5, 2.5 inch, 2.5 in"]
+  },
+  {
+    "question": "What does formatting a drive create?" ,
+    "answers": ["file system, root directory, root folder"]
+  },
+  {
+    "question": "What is a partitioning method used by a basic disk?",
+    "answers": ["GPT, MBR"]
+  },
+  {
+    "question": "What partition method is used by a dynamic disk?",
+    "answers": ["dynamic storage, dynamic storage partitioning"]
+  },
+  {
+    "question": "What loads the OS in a MBR drive?" ,
+    "answers": ["partition boot sector, boot sector"]
+  },
+  {
+    "question": "What type of partition(s) does a MBR drive support?",
+    "answers": ["primary, extended" ]
+  },
+  {
+    "question": "True or False. You can boot OS from an extended partion?",
+    "answers": ["false" ]
+  },
+  {
+    "question": "Where does Windows store essential Windows boot files?" ,
+    "answers": ["System reserved, system reserved partition"]
+  },
+  {
+    "question": "A logical drive gets a drive letter?",
+    "answers": ["true" ]
+  },
+  {
+    "question": "What is the drive structure in a dynamic disk called?",
+    "answers": ["volume"]
+  },
+  {
+    "question": "How many volumes can a dynamic disk have?" ,
+    "answers": ["infinite, unlimited, no limit, alot"]
+  },
+  {
+    "question": "Simple volumes work a lot like what type of partition?",
+    "answers": ["primary"]
+  },
+  {
+    "question": "What type of motherboard do you need to boot modern Windows of MacOSX from GPT?" ,
+    "answers": ["UEFI"]
+  },
+  {
+    "question": "What is the status code for a bad sector in FAT location?",
+    "answers": ["FFF7" ]
+  },
+  {
+    "question": "What is the status code for a good sector in FAT location?" ,
+    "answers": ["0000"]
+  },
+  {
+    "question": "What does full formatting do (look for) that quick formatting does not?",
+    "answers": ["bad sectors"]
+  },
+  {
+    "question":"What is it called when you combine a set of contiguous sectors and treat them as a single unit?" ,
+    "answers": ["clustering, cluster"]
+  },
+  {
+    "question": "What status code indicates end of file in FAT?",
+    "answers": ["FFFF"]
+  },
+  {
+    "question": "What is it called when a file gets written to a separate arbitrary place on disk?" ,
+    "answers": ["fragmentation"]
+  },
+  {
+    "question": "How often should you defrag an SSD?" ,
+    "answers": ["never"]
+  },
+  {
+    "question": "What size of partitions does FAT16 support?",
+    "answers": ["2GB,2 gigabytes"]
+  },
+  {
+    "question": "What size of partitions does FAT32 support?",
+    "answers": ["2TB, 2 terabytes"]
+  },
+  {
+    "question": "What size of partitions does NTFS support?",
+    "answers": ["2TB, 2 terabytes, 16TB, 16 terabytes, 16EB, 16 exabytes"]
+  },
+  {
+    "question": "What is NTFS?",
+    "answers": ["New Technology File Sytem"]
+  },
+  {
+    "question": "What improvements/features did NTFS introduce?",
+    "answers": ["compression, encrytpion, disk quotas, cluster sizing, security, redundancy"]
+  },
+  {
+    "question": "What does NTFS keep a backup copy of in the middle of disk?",
+    "answers": ["MFT, master file table"]
+  },
+  {
+    "question": "How do you provide security to files and folders in NTFS?",
+    "answers": ["ACL, access control list"]
+  },
+  {
+    "question": "What is EFS?" ,
+    "answers": ["Encrypted file system" ]
+  },
+  {
+    "question": "What keeps users from monopolizing drive space?",
+    "answers": ["disk quotas" ]
+  },
+  {
+    "question": "What is the largest file size you can have on FAT32 drive?",
+    "answers": ["4GB, 4 gigabytes" ]
+  },
+  {
+    "question": "What is the largest file size  you can store on exFAT drive?",
+    "answers": ["16EB, 16 exabytes"]
+  },
+  {
+    "question": "What is the partion size limit for exFAT drive(theoretically)?",
+    "answers": ["64ZB, 64 zetabyes"]
+  },
+  {
+    "question": "What causes issues with NTFS on usb flash drives when switching systems?" ,
+    "answers": ["encryption, ACL, access control list, permissions"]
+  },
+  {
+    "question": "What file system does Linux use?",
+    "answers": ["ext4, Fourth Extended File System"]
+  },
+  {
+    "question": "What is the volume size limit on ext4 drive?",
+    "answers": ["1EB, 1 exabyte"]
+  },
+  {
+    "question": "What is the file size limit on ext4 drive?",
+    "answers": ["16TB, 16 terabytes"]
+  },
+  {
+    "question": "What is removable media with bootable OS called?",
+    "answers": ["boot disk, boot device"]
+  },
+  {
+    "question": "What is every newly installed drive set as?" ,
+    "answers": ["basic disk, basic" ]
+  },
+  {
+    "question": "Is it a good idea to use SSD to implement parity spaces?",
+    "answers": ["No"]
+  },
+  {
+    "question": "Is it ok to do two or three way mirror with SSD?",
+    "answers": ["Yes"]
+  },
+  {
+    "question": "What are some tools for error checking a hard drive on Windows,MacOSX,Linux?",
+    "answers": ["ScanDisk, chkdsk, Error-checking, Disk utility, fsck"]
+  },
+  {
+    "question": "How often should you do error checking on disks?" ,
+    "answers": ["weekly"]
+  },
+  {
+    "question": "How often should you defrag a drive?",
+    "answers": ["monthly"]
+  },
+  {
+    "question": "What could you lost if you dont' do error checking?'",
+    "answers": ["data"]
+  },
+  {
+    "question": "How often should you run disk cleanup in Windows?",
+    "answers": ["monthly"]
+  },
+  {
+    "question": "what is an allocation unit another name for?" ,
+    "answers": ["cluster"]
+  },
+  {
+    "question": "What reports back cluster errors?" ,
+    "answers": ["S.M.A.R.T, smart"]
+  },
+  {
+    "question": "What does the error 'trying to recover lost allocation unit' indicate?" ,
+    "answers": ["dying drive"]
+  },
+  {
+    "question": "What utility should you run first thing when you get windows error messages related to corrupt files, boot files, or missing files?"  ,
+    "answers": ["error-checking, error checking"]
+  },
+  {
+    "question": "What feature in System Setup should you check in drive stops showing in explorer?",
+    "answers": ["auto detect"]
   }
+  
 ]

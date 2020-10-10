@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/timothyhammes/Projects/TechTacToe/TechTacToe.csproj",
+  "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/TechTacToe.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "3.0",
@@ -8,127 +8,172 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1659024703,
+        "HashCode": -1803702433,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.App",
+        "Name": "TechTacToe.Pages.Index",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.App"
+          "Common.TypeName": "TechTacToe.Pages.Index"
         }
       },
       {
-        "HashCode": -458317603,
+        "HashCode": -1681952303,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.App",
+        "Name": "TechTacToe.Pages.Index",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.App"
+            "TagName": "TechTacToe.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.App",
+          "Common.TypeName": "TechTacToe.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1800760203,
+        "HashCode": -721242774,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.BadMessage",
+        "Name": "TechTacToe.Pages.Game",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BadMessage"
+            "TagName": "Game"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Pages.Game"
+        }
+      },
+      {
+        "HashCode": -1840528389,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Pages.Game",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TechTacToe.Pages.Game"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Pages.Game",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -903244460,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Pages.Study",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Study"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Pages.Study"
+        }
+      },
+      {
+        "HashCode": -1124619167,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Pages.Study",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TechTacToe.Pages.Study"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Pages.Study",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1811731375,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Shared.Question",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Question"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Name": "CurrentQuestion",
+            "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
+              "Common.PropertyName": "CurrentQuestion"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentQuestionChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "CurrentQuestionChanged",
+              "Components.EventCallback": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.BadMessage"
+          "Common.TypeName": "TechTacToe.Shared.Question"
         }
       },
       {
-        "HashCode": 1772659795,
+        "HashCode": -1223955907,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.BadMessage",
+        "Name": "TechTacToe.Shared.Question",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.Shared.BadMessage"
+            "TagName": "TechTacToe.Shared.Question"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Name": "CurrentQuestion",
+            "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "ChildContent",
-              "Components.ChildContent": "True"
+              "Common.PropertyName": "CurrentQuestion"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentQuestionChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "CurrentQuestionChanged",
+              "Components.EventCallback": "True"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.BadMessage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 996129315,
-        "Kind": "Components.ChildContent",
-        "Name": "TechTacToe.Shared.BadMessage.ChildContent",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChildContent",
-            "ParentTag": "BadMessage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "TechTacToe.Shared.BadMessage.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1104773607,
-        "Kind": "Components.ChildContent",
-        "Name": "TechTacToe.Shared.BadMessage.ChildContent",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChildContent",
-            "ParentTag": "TechTacToe.Shared.BadMessage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "TechTacToe.Shared.BadMessage.ChildContent",
-          "Components.IsSpecialKind": "Components.ChildContent",
+          "Common.TypeName": "TechTacToe.Shared.Question",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -241,14 +286,14 @@
         }
       },
       {
-        "HashCode": 187569444,
+        "HashCode": 1800760203,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.GoodMessage",
+        "Name": "TechTacToe.Shared.BadMessage",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GoodMessage"
+            "TagName": "BadMessage"
           }
         ],
         "BoundAttributes": [
@@ -264,18 +309,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.GoodMessage"
+          "Common.TypeName": "TechTacToe.Shared.BadMessage"
         }
       },
       {
-        "HashCode": -1574390620,
+        "HashCode": 1772659795,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.GoodMessage",
+        "Name": "TechTacToe.Shared.BadMessage",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.Shared.GoodMessage"
+            "TagName": "TechTacToe.Shared.BadMessage"
           }
         ],
         "BoundAttributes": [
@@ -291,77 +336,44 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.GoodMessage",
+          "Common.TypeName": "TechTacToe.Shared.BadMessage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1527327753,
+        "HashCode": 996129315,
         "Kind": "Components.ChildContent",
-        "Name": "TechTacToe.Shared.GoodMessage.ChildContent",
+        "Name": "TechTacToe.Shared.BadMessage.ChildContent",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "GoodMessage"
+            "ParentTag": "BadMessage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "TechTacToe.Shared.GoodMessage.ChildContent",
+          "Common.TypeName": "TechTacToe.Shared.BadMessage.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -799897543,
+        "HashCode": 1104773607,
         "Kind": "Components.ChildContent",
-        "Name": "TechTacToe.Shared.GoodMessage.ChildContent",
+        "Name": "TechTacToe.Shared.BadMessage.ChildContent",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "TechTacToe.Shared.GoodMessage"
+            "ParentTag": "TechTacToe.Shared.BadMessage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "TechTacToe.Shared.GoodMessage.ChildContent",
+          "Common.TypeName": "TechTacToe.Shared.BadMessage.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 108589033,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.GridSelect",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GridSelect"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.GridSelect"
-        }
-      },
-      {
-        "HashCode": 880813201,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.GridSelect",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TechTacToe.Shared.GridSelect"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.GridSelect",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -462,92 +474,6 @@
         }
       },
       {
-        "HashCode": -1126291642,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.NavMenu",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -303042797,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.NavMenu",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TechTacToe.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1645937678,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.PageTitle",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PageTitle"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.PageTitle"
-        }
-      },
-      {
-        "HashCode": 1860715805,
-        "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.PageTitle",
-        "AssemblyName": "TechTacToe",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TechTacToe.Shared.PageTitle"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.PageTitle",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1623319019,
         "Kind": "Components.Component",
         "Name": "TechTacToe.Shared.Player",
@@ -601,73 +527,35 @@
         }
       },
       {
-        "HashCode": -1811731375,
+        "HashCode": -1126291642,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.Question",
+        "Name": "TechTacToe.Shared.NavMenu",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Question"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentQuestion",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentQuestion"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentQuestionChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "CurrentQuestionChanged",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.Question"
+          "Common.TypeName": "TechTacToe.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -1223955907,
+        "HashCode": -303042797,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Shared.Question",
+        "Name": "TechTacToe.Shared.NavMenu",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.Shared.Question"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentQuestion",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentQuestion"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentQuestionChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "CurrentQuestionChanged",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "TechTacToe.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Shared.Question",
+          "Common.TypeName": "TechTacToe.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -774,68 +662,213 @@
         }
       },
       {
-        "HashCode": -1803702433,
+        "HashCode": 108589033,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Pages.Index",
+        "Name": "TechTacToe.Shared.GridSelect",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "GridSelect"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Pages.Index"
+          "Common.TypeName": "TechTacToe.Shared.GridSelect"
         }
       },
       {
-        "HashCode": -1681952303,
+        "HashCode": 880813201,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Pages.Index",
+        "Name": "TechTacToe.Shared.GridSelect",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.Pages.Index"
+            "TagName": "TechTacToe.Shared.GridSelect"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Pages.Index",
+          "Common.TypeName": "TechTacToe.Shared.GridSelect",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -721242774,
+        "HashCode": -1645937678,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Pages.Game",
+        "Name": "TechTacToe.Shared.PageTitle",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Game"
+            "TagName": "PageTitle"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Pages.Game"
+          "Common.TypeName": "TechTacToe.Shared.PageTitle"
         }
       },
       {
-        "HashCode": -1840528389,
+        "HashCode": 1860715805,
         "Kind": "Components.Component",
-        "Name": "TechTacToe.Pages.Game",
+        "Name": "TechTacToe.Shared.PageTitle",
         "AssemblyName": "TechTacToe",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TechTacToe.Pages.Game"
+            "TagName": "TechTacToe.Shared.PageTitle"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TechTacToe.Pages.Game",
+          "Common.TypeName": "TechTacToe.Shared.PageTitle",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 187569444,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Shared.GoodMessage",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GoodMessage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Shared.GoodMessage"
+        }
+      },
+      {
+        "HashCode": -1574390620,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.Shared.GoodMessage",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TechTacToe.Shared.GoodMessage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.Shared.GoodMessage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1527327753,
+        "Kind": "Components.ChildContent",
+        "Name": "TechTacToe.Shared.GoodMessage.ChildContent",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "GoodMessage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "TechTacToe.Shared.GoodMessage.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -799897543,
+        "Kind": "Components.ChildContent",
+        "Name": "TechTacToe.Shared.GoodMessage.ChildContent",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "TechTacToe.Shared.GoodMessage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "TechTacToe.Shared.GoodMessage.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1659024703,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.App",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.App"
+        }
+      },
+      {
+        "HashCode": -458317603,
+        "Kind": "Components.Component",
+        "Name": "TechTacToe.App",
+        "AssemblyName": "TechTacToe",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TechTacToe.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TechTacToe.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12381,79 +12414,84 @@
   "RootNamespace": "TechTacToe",
   "Documents": [
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Pages/Index.razor",
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Pages/Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/StudyEntry.razor",
-      "TargetPath": "Shared\\StudyEntry.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/GridSelect.razor",
-      "TargetPath": "Shared\\GridSelect.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/BadMessage.razor",
-      "TargetPath": "Shared\\BadMessage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/Instructions.razor",
-      "TargetPath": "Shared\\Instructions.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/GoodMessage.razor",
-      "TargetPath": "Shared\\GoodMessage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Pages/Game.razor",
-      "TargetPath": "Pages\\Game.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/Question.razor",
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/Question.razor",
       "TargetPath": "Shared\\Question.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/Board.razor",
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/Board.razor",
       "TargetPath": "Shared\\Board.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/Player.razor",
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/BadMessage.razor",
+      "TargetPath": "Shared\\BadMessage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/Player.razor",
       "TargetPath": "Shared\\Player.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/Shared/PageTitle.razor",
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/StudyEntry.razor",
+      "TargetPath": "Shared\\StudyEntry.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Pages/Game.razor",
+      "TargetPath": "Pages\\Game.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/Instructions.razor",
+      "TargetPath": "Shared\\Instructions.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/GridSelect.razor",
+      "TargetPath": "Shared\\GridSelect.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/PageTitle.razor",
       "TargetPath": "Shared\\PageTitle.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/timothyhammes/Projects/TechTacToe/_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Pages/Study.razor",
+      "TargetPath": "Pages\\Study.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/Shared/GoodMessage.razor",
+      "TargetPath": "Shared\\GoodMessage.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"
