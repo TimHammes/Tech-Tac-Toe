@@ -17,58 +17,58 @@ else{
 <Board >  
     
     <tr>     
-        <td @ref=currentCell[0]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[0]))" >
+        <td @ref=gameCells[0]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[0]))" >
                     
         </td>
-        <td @ref=currentCell[1]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[1] ))" >
+        <td @ref=gameCells[1]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[1] ))" >
                   
         </td>
-        <td @ref=currentCell[2]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[2] ))" >
+        <td @ref=gameCells[2]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[2] ))" >
                     
         </td>
-        <td @ref=currentCell[3]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[3] ))" >
-                    
-        </td>
-    </tr>
-    <tr>     
-        <td @ref=currentCell[4]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[4] ))" >
-                    
-        </td>
-        <td @ref=currentCell[5]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[5] ))" >
-                    
-        </td>
-        <td @ref=currentCell[6]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[6] ))" >
-                    
-        </td>
-        <td @ref=currentCell[7]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[7] ))" >
+        <td @ref=gameCells[3]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[3] ))" >
                     
         </td>
     </tr>
     <tr>     
-        <td @ref=currentCell[8]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[8] ))" >
+        <td @ref=gameCells[4]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[4] ))" >
                     
         </td>
-        <td @ref=currentCell[9]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[9] ))" >
+        <td @ref=gameCells[5]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[5] ))" >
                     
         </td>
-        <td @ref=currentCell[10]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[10] ))" >
+        <td @ref=gameCells[6]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[6] ))" >
                     
         </td>
-        <td @ref=currentCell[11]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[11] ))" >
+        <td @ref=gameCells[7]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[7] ))" >
                     
         </td>
     </tr>
     <tr>     
-        <td @ref=currentCell[12]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[12] ))" >
+        <td @ref=gameCells[8]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[8] ))" >
                     
         </td>
-        <td @ref=currentCell[13]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[13] ))" >
+        <td @ref=gameCells[9]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[9] ))" >
                     
         </td>
-        <td @ref=currentCell[14]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[14] ))" >
+        <td @ref=gameCells[10]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[10] ))" >
+                    
+        </td>
+        <td @ref=gameCells[11]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[11] ))" >
+                    
+        </td>
+    </tr>
+    <tr>     
+        <td @ref=gameCells[12]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[12] ))" >
+                    
+        </td>
+        <td @ref=gameCells[13]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[13] ))" >
+                    
+        </td>
+        <td @ref=gameCells[14]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[14] ))" >
                    
         </td>
-        <td @ref=currentCell[15]  @onclick="@(()=>UpdateCurrentQuestion(currentCell[15] ))" >
+        <td @ref=gameCells[15]  @onclick="@(()=>UpdateCurrentQuestion(gameCells[15] ))" >
                    
         </td>
     </tr>
@@ -78,7 +78,7 @@ else{
 
  @if(showQuestion){
    
-    <EditForm Model="@answerModel" OnValidSubmit="@HandleValidSubmit">
+    <EditForm Model="@answerModel" OnValidSubmit="HandleValidSubmit">
         <DataAnnotationsValidator />
         <ValidationSummary />
 
@@ -110,9 +110,6 @@ else{
      else{
          <BadMessage>@message</BadMessage>
      }
-
-  
-  
  }
 
 @code
@@ -121,7 +118,7 @@ else{
 
     public ElementReference Element { get; set; }
 
-    private ElementReference[] currentCell = new ElementReference[16];
+    private ElementReference[] gameCells = new ElementReference[16];
 
     private bool isPlayerX = true;
 
@@ -129,6 +126,7 @@ else{
 
     private string playerIndicator;
 
+    public string[] answerArrayTrimmed;
 
     public string PlayerIndicator { get => playerIndicator; set => playerIndicator = value; }
 
@@ -160,13 +158,14 @@ else{
     public class AnswerModel
     {
         [Required]
-        [StringLength(20, ErrorMessage = "Name is too long.")]
+        [StringLength(40, ErrorMessage = "Name is too long.")]
         public string Answer { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
     {
         questions = await Http.GetFromJsonAsync<QuestionCollection[]>("sample-data/questions.json");
+        await CreateGameCellsJS(gameCells);
 
     }
 
@@ -174,12 +173,35 @@ else{
     {
 
         currentAnswers = currentQA.Answers;
+        var lowercaseAnswers = ConvertToLowercase(currentAnswers);
+        var answerArray = lowercaseAnswers.Split(",");
+        answerArrayTrimmed = new string[answerArray.Length];
+
+        for (var i = 0; i < answerArray.Length; i++)
+        {
+            string trimmedItem = answerArray[i].Trim();
+            answerArrayTrimmed[i] = trimmedItem;
+
+        }
+        foreach (var item in answerArrayTrimmed)
+        {
+            System.Console.WriteLine(item);
+        }
+        @*return answerArrayTrimmed;*@
+    }
+
+    public string ConvertToLowercase(string[] currentAnswers)
+    {
+        var joinedAnswers = string.Join(",", currentAnswers);
+        var convertedToLowerCase = joinedAnswers.ToLower();
+
+        return convertedToLowerCase;
 
     }
 
     private void UpdateCurrentQuestion(ElementReference el)
     {
-        System.Console.WriteLine(questions.Length);
+
         currentQA = questions[rand.Next(questions.Length)];
         showQuestion = true;
         currentQuestion = currentQA.Question;
@@ -199,38 +221,54 @@ else{
             await JSRuntime.InvokeVoidAsync("setElementText", el, "O");
         }
 
-
-
     }
+
+    private async Task CreateGameCellsJS(ElementReference[] arr)
+    {
+        await JSRuntime.InvokeVoidAsync("createElementArray", arr);
+    }
+
 
     private async Task HandleValidSubmit()
     {
-        if (currentAnswers.Contains(answerModel.Answer))
-        {
-            answerModel.Answer = String.Empty;
-            message = "Good Answer!";
-            isGoodAnswer = true;
-            showQuestion = false;
-            showMessage = true;
-            await WinSquare(Element);
+        string answerLower = answerModel.Answer.ToLower();
 
+        //System.Console.WriteLine(answerLower);
 
-        }
-        else
-        {
-            answerModel.Answer = String.Empty;
-            message = "Wrong Answer!";
-            isGoodAnswer = false;
-            showQuestion = false;
-            showMessage = true;
-
-        }
-
-
+        ProcessUserInput(answerArrayTrimmed, answerLower);
 
         await ToggleMessage();
         TogglePlayer();
 
+    }
+
+    private async void ProcessUserInput(string[] possibleAnswers, string compareString)
+    {
+
+        foreach (var entry in possibleAnswers)
+        {
+            System.Console.WriteLine("Entry" + entry);
+            System.Console.WriteLine("answerLower:" + compareString);
+
+            if (entry == compareString)
+            {
+                answerModel.Answer = String.Empty;
+                message = "Good Answer!";
+                isGoodAnswer = true;
+                showQuestion = false;
+                showMessage = true;
+                await WinSquare(Element);
+            }
+            else
+            {
+                answerModel.Answer = String.Empty;
+                message = "Wrong Answer!";
+                isGoodAnswer = false;
+                showQuestion = false;
+                showMessage = true;
+
+            }
+        }
     }
 
     private async Task ToggleMessage()

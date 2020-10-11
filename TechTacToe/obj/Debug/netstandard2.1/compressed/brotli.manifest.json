@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/3RyqZU9VpcowOhm4uCWu1RU7eGl18PmbZcCKHXpjVnc=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/BOXk-L9PNYXGix9ezpbY2EAp3cFHzIsy4V5cDE8Q89w=.hash",
       "Source": "\/Users\/timothyhammes\/Documents\/GitHub\/Tech-Tac-Toe\/TechTacToe\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/TechTacToe.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/TechTacToe.dll.br"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/XMnIG094jlESIICKg0ZOrlCNb00CzRP7msZZVHBkyUo=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/jva66RIH0QnADaLtxdn0ej6uckVWJTM2mGgmkp9sbyc=.hash",
       "Source": "\/Users\/timothyhammes\/Documents\/GitHub\/Tech-Tac-Toe\/TechTacToe\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/TechTacToe.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/TechTacToe.pdb.br"
     },
@@ -286,7 +286,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/mCgB3rFYdrlDaLgZqeWgEJbuUEg1FFsf3KO6VLON_Gg=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/x-n56uRtwMr3LNYsNeJqGsSo69pq8ZsU6t-0dT7pUr0=.hash",
       "Source": "\/Users\/timothyhammes\/Documents\/GitHub\/Tech-Tac-Toe\/TechTacToe\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.br"
     }

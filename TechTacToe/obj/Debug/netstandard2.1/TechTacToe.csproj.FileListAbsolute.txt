@@ -279,7 +279,6 @@
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/TechTacToe.RazorTargetAssemblyInfo.cache
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/TechTacToe.csproj.CopyComplete
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/blazor/unlinked.output
-/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/3RyqZU9VpcowOhm4uCWu1RU7eGl18PmbZcCKHXpjVnc=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -331,13 +330,11 @@
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/_kkwUt5LUrFrnFcHiSvLP3Ps50UAimB6C5utgehqOo4=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/XMnIG094jlESIICKg0ZOrlCNb00CzRP7msZZVHBkyUo=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/blazor/blazor.boot.json
-/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/mCgB3rFYdrlDaLgZqeWgEJbuUEg1FFsf3KO6VLON_Gg=.hash
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechTacToe.dll.gz
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Net.Http.Json.dll.gz
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Buffers.dll.gz
@@ -458,3 +455,6 @@
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/staticwebassets/TechTacToe.StaticWebAssets.xml
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/TechTacToe.dll
 /Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/TechTacToe.pdb
+/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/BOXk-L9PNYXGix9ezpbY2EAp3cFHzIsy4V5cDE8Q89w=.hash
+/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/jva66RIH0QnADaLtxdn0ej6uckVWJTM2mGgmkp9sbyc=.hash
+/Users/timothyhammes/Documents/GitHub/Tech-Tac-Toe/TechTacToe/obj/Debug/netstandard2.1/integrity/x-n56uRtwMr3LNYsNeJqGsSo69pq8ZsU6t-0dT7pUr0=.hash
